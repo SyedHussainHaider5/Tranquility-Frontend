@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranquility: Music</title>
+    <link rel="icon" href="images/cd.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/music.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="logo">Tranquility</h1>
+        <div id="buttons">
+            <button onclick="logout()">Logout</button>
+            <button onclick="displaySearchWindow()">Search Song</button>
+            <button onclick="displayTimerWindow()">Sleep Timer</button>
+
+        </div>
+    </div>
+    <div id="player">
+        <h1 id="music">Music</h1>
+        <div id="cd"></div>
+        <div id="song-name">
+            <p>Song Name</p>
+        </div>
+        <div id="songtime">
+            <p id="starting">0:00</p>
+            <div id="streamline" onclick="seek()">
+                <div id="render"></div>
+            </div>
+            <p id="ending">0:00</p>
+        </div>
+        <div id="music-control">
+            <div id="revert"></div>
+            <div id="play"></div>
+            <div id="skip"></div>
+            <div id="repeat"></div>
+        </div>
+        <div id="other-control">
+            <div id="favorite"></div>
+            <div id="download"></div>
+        </div>
+        <div id="searching">
+            <div id="exit"></div>
+            <label for="search-box">Enter Your Song Name</label>
+            <input type="text" id="search-box" placeholder="Your Query Here">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="sleeptimer">
+            <div id="exit"></div>
+            <label for="time-box">Enter Time</label>
+            <input type="number" id="time" placeholder="Time in Minutes" min="0">
+            <button id="time-button">Set Timer</button>
+        </div>
+    </div>
+</body>
+
+</html>
